@@ -13,7 +13,6 @@ import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Tag("selenide_android")
 public class AndroidSelenideTests {
     @Test
     @DisplayName("Successful search in wikipedia android app")

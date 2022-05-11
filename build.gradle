@@ -55,8 +55,3 @@ tasks.withType(Test) {
         }
     }
 }
-task selenide_android(type: Test) {
-    useJUnitPlatform {
-        includeTags 'selenide_android'
-    }
-}
