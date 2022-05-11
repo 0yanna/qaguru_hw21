@@ -21,7 +21,7 @@ public class TestBase {
         addListener("AllureSelenide", new AllureSelenide());
 
         Configuration.browser = BrowserstackMobileDriver.class.getName();
-        Configuration.startMaximized = false;
+        //Configuration.startMaximized = false;
         Configuration.browserSize = null;
         Configuration.timeout = 10000;
     }
