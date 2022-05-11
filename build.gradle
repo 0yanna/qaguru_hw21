@@ -27,6 +27,7 @@ allure {
 }
 dependencies {
     testImplementation(
+            "org.aspectj:aspectjweaver:1.9.6",
             "com.codeborne:selenide:$selenideVersion",
             "io.appium:java-client:$appiumVersion",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion",
@@ -52,5 +53,10 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
+    }
+}
+task selenide_android(type: Test) {
+    useJUnitPlatform {
+        includeTags 'selenide_android'
     }
 }
