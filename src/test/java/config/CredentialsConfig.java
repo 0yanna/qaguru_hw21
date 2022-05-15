@@ -13,3 +13,4 @@ public interface CredentialsConfig extends Config {
     String app();
 
 }
+
