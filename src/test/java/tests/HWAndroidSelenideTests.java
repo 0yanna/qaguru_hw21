@@ -12,7 +12,6 @@ import static io.qameta.allure.Allure.step;
 
 public class HWAndroidSelenideTests extends TestBase {
     @Test
-    @DisplayName("Successful search in new version of wikipedia android app")
     void searchTest() {
 
         step("Skip start page", () -> {
